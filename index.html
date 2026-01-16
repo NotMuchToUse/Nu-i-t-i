@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nuôi tôi</title>
 
-    <!-- ======================= -->
-    <!-- 1. FONTS (Phông chữ)    -->
-    <!-- ======================= -->
+    <!-- 1. FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -19,113 +17,562 @@
       rel="stylesheet"
     />
 
-    <!-- ======================= -->
-    <!-- 2. CSS LIBRARIES        -->
-    <!-- ======================= -->
-    <!-- Animate.css -->
+    <!-- 2. CSS LIBRARIES -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <!-- Swiper -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <!-- OverlayScrollbars -->
     <link
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.3.0/styles/overlayscrollbars.min.css"
       rel="stylesheet"
     />
-    <!-- Bulma -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
-    />
-    <!-- Reset css -->
+
+    <!-- Reset & Tailwind -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      referrerpolicy="no-referrer"
     />
-    <!-- Custom CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .swiper-pagination-bullet-active {
+        background-color: #db2777 !important;
+      }
+    </style>
   </head>
 
-  <body>
-    <!-- Header -->
-    <div class="container">
-      <span class="element"></span>
-      <div class="box">I'm in a box.</div>
+  <body class="w-full h-full text-slate-800">
+    <div class="min-h-screen w-full relative flex flex-col">
+      <div
+        class="fixed inset-0 z-0 bg-[linear-gradient(135deg,#F8BBD9_0%,#FDD5B4_25%,#FFF2CC_50%,#E1F5FE_75%,#BBDEFB_100%)]"
+      ></div>
 
-      <ul data-tabs>
-        <li><a data-tabby-default href="#tab1">Tab 1</a></li>
-        <li><a href="#tab2">Tab 2</a></li>
-      </ul>
+      <!-- Hero section -->
+      <section
+        class="relative z-10 container mx-auto px-4 h-screen flex flex-col justify-between py-10"
+      >
+        <!-- Phần 1: Chữ chạy -->
+        <div class="flex-grow flex justify-center items-center">
+          <div class="text-center">
+            <span
+              class="element !text-4xl md:!text-6xl lg:!text-7xl font-bold drop-shadow-sm leading-tight block h-24"
+            ></span>
+          </div>
+        </div>
 
-      <div id="tab1">Nội dung 1</div>
-      <div id="tab2">Nội dung 2</div>
+        <!-- Phần 2: Founder -->
+        <div
+          class="w-full flex justify-end items-end"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="flex flex-col gap-4 items-end text-right">
+            <span class="text-xl md:text-2xl font-bold text-slate-700">
+              Các founder thành lập dự án:
+            </span>
+
+            <div class="flex items-center gap-[-10px]">
+              <div class="relative group">
+                <img
+                  src="https://s120-25-ava-talk.zadn.vn/2/d5272a0c0036fb912aa593ae558ece7d.jpg?key=KKBakdqUy5pe-3nzP8VO3w&time=1773751895"
+                  class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-full border-2 border-white shadow-md hover:scale-110 transition-transform cursor-pointer"
+                  data-tippy-content="Quốc Khang"
+                />
+              </div>
+              <div class="relative group -ml-4">
+                <img
+                  src="https://s120-25-ava-talk.zadn.vn/49/a81f93152a26b4848e7e3ca5e62adffe.jpg?key=WKL4pHGWWWpDHAVYpwlSPA&time=1773751883"
+                  class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-full border-2 border-white shadow-md hover:scale-110 transition-transform cursor-pointer"
+                  data-tippy-content="Lê Tâm"
+                />
+              </div>
+              <div class="relative group -ml-4">
+                <img
+                  src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-1/604919428_1396526305205814_7812481754747788064_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=gOJkx-9izOwQ7kNvwGuBRTq&_nc_oc=AdmUfmbGAeSY_sajnGbmCCxL7IfweVAHsvgD-rs9xZrtOFZxMmIpkx2XONtNduby94O0_RzmEOea0ltDY_22-aAF&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=ECjDu7HyU2eEGLKDZ_yUBQ&oh=00_AfoQbm5feV1CbIfh9ZNmi-CQ_edZ1yekzwtcrJrc0qTYmA&oe=696FDD55"
+                  class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-full border-2 border-white shadow-md hover:scale-110 transition-transform cursor-pointer"
+                  data-tippy-content="Xuân Hiếu"
+                />
+              </div>
+              <div class="relative group -ml-4">
+                <img
+                  src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/573073710_4202062313416307_3499868769558070526_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=keCXfBLz8owQ7kNvwFsfrgr&_nc_oc=AdnNr4UacMixV9em4GZd4kYAGxV3q0WXdhwreyPN6sdYUll5zxBZfFKJ1mnNoLE52A-ulYd7ayZP-z_vqt41e7Nw&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=ECjDu7HyU2eEGLKDZ_yUBQ&oh=00_AfqEFAqSW6Ue74yigwt512US0geWerVg10WZt1xi8Y8IDA&oe=696FEF90"
+                  class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-full border-2 border-white shadow-md hover:scale-110 transition-transform cursor-pointer"
+                  data-tippy-content="Hoàng Minh"
+                />
+              </div>
+              <div class="relative group -ml-4">
+                <img
+                  src="https://scontent.fsgn5-14.fna.fbcdn.net/v/t39.30808-1/605574787_122185489622435160_2629972029848565653_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=101&ccb=1-7&_nc_sid=1d2534&_nc_ohc=TL4q23PhLW8Q7kNvwG7NeHs&_nc_oc=AdkmMs5mv1vbwSwUMaov8gRtKidXhElOvzuhxxD2fORI22pj_3V1oxY2mcwlW9Uc66s8mEd9JnpwjVbKzc6JXDDt&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fsgn5-14.fna&_nc_gid=ECjDu7HyU2eEGLKDZ_yUBQ&oh=00_AfpLLhgJOp58hRnevVAlppulU5dea5i3Qm9VwgPSlGI7iw&oe=696FD813"
+                  class="w-14 h-14 md:w-16 md:h-16 object-cover rounded-full border-2 border-white shadow-md hover:scale-110 transition-transform cursor-pointer"
+                  data-tippy-content="Ngọc Tâm"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reason section -->
+      <section
+        class="flex flex-col items-center justify-center gap-20 z-10 py-20 px-4 relative overflow-hidden"
+      >
+        <div
+          class="container flex flex-col items-center justify-center gap-6 h-[80vh] text-center"
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-delay="300"
+        >
+          <span
+            class="text-4xl md:text-6xl lg:text-7xl font-bold drop-shadow-sm leading-tight"
+            >Bạn sợ tiền bị dùng vào mục đích xấu?</span
+          >
+          <video
+            src="/asset/Raised Eyebrow Emoji.webm"
+            autoplay
+            loop
+            muted
+            playsinline
+            class="w-48 h-48"
+          ></video>
+        </div>
+        <div
+          class="container flex flex-col items-center justify-center gap-6 h-[80vh] text-center"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-delay="350"
+        >
+          <span
+            class="text-4xl md:text-6xl lg:text-7xl font-bold drop-shadow-sm leading-tight"
+            >Vậy thì hãy xem lợi ích và quyền lợi!</span
+          >
+          <video
+            src="/asset/Thinking.webm"
+            autoplay
+            loop
+            muted
+            playsinline
+            class="w-48 h-48"
+          ></video>
+        </div>
+        <div
+          class="container flex flex-col items-center justify-center gap-6 h-[80vh] text-center"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-delay="400"
+        >
+          <span
+            class="text-4xl md:text-6xl lg:text-7xl font-bold drop-shadow-sm leading-tight"
+            >Khi nuôi chúng tôi!</span
+          >
+          <video
+            src="/asset/Star Strike Emoji.webm"
+            autoplay
+            loop
+            muted
+            playsinline
+            class="w-48 h-48"
+          ></video>
+        </div>
+      </section>
+
+      <!-- Benefit section -->
+      <section
+        class="flex flex-col items-center justify-center gap-10 z-10 py-20 px-4 relative overflow-hidden"
+      >
+        <!-- Title Heading -->
+        <div class="text-center mb-5" data-aos="fade-down">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-slate-800 mb-4 drop-shadow-sm"
+          >
+            Đặc quyền "Vô Cực" 🚀
+          </h2>
+          <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+            Những quyền lợi mà chỉ có người "thừa tiền" mới hiểu được. Đọc xong
+            cấm cười, hãy donate.
+          </p>
+        </div>
+
+        <div
+          class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-5"
+        >
+          <!-- CARD 1 -->
+          <div
+            class="bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col group"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://media.tenor.com/ngnzCHdGARwAAAAM/im-here-is-come-to-you.gif"
+                alt="meme"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-xs font-bold text-blue-600 uppercase tracking-wider mb-2"
+                >Transparency</span
+              >
+              <h3 class="text-xl font-bold text-slate-800 mb-3 line-clamp-2">
+                Dòng tiền minh bạch
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                Sao kê 4K Ultra HD, nhanh hơn tốc độ người yêu cũ trở mặt. Có cả
+                chữ ký điện tử.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div
+            class="bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col group"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://media.tenor.com/LOu06WCOACcAAAAe/money-rich.png"
+                alt="Laptop"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-xs font-bold text-pink-600 uppercase tracking-wider mb-2"
+                >Spending</span
+              >
+              <h3 class="text-xl font-bold text-slate-800 mb-3 line-clamp-2">
+                Dùng tiền đúng cách
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                Cam kết chỉ dùng tiền mua nhà, mua xe, đi du lịch... và sẽ chụp
+                ảnh check-in gửi bạn xem.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div
+            class="bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col group"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9y4DyGoq_0Bi0UFI4RBiu5LmdnW1Hya0bUw&s"
+                alt="Teamwork"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-xs font-bold text-purple-600 uppercase tracking-wider mb-2"
+                >Obedience</span
+              >
+              <h3 class="text-xl font-bold text-slate-800 mb-3 line-clamp-2">
+                "Ngoan" không cãi
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                Chỉ cần ting ting, chúng tôi sẽ ngoan ngoãn báo cáo tài chính mà
+                không cãi nửa lời.
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div
+            class="bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://i.pinimg.com/736x/95/ae/19/95ae198555006c9ece1d4208e8ea289f.jpg"
+                alt="Cat"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-xs font-bold text-orange-600 uppercase tracking-wider mb-2"
+                >Support</span
+              >
+              <h3 class="text-xl font-bold text-slate-800 mb-3 line-clamp-2">
+                Tâm sự 24/7
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                Sẵn sàng chat tới sáng nếu bạn (hoặc tôi) không ngủ quên,
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+          <div
+            class="bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col group"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://i.redd.it/d1fjuyjd6rd71.jpg"
+                alt="Coffee"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-xs font-bold text-yellow-700 uppercase tracking-wider mb-2"
+                >Drama</span
+              >
+              <h3 class="text-xl font-bold text-slate-800 mb-3 line-clamp-2">
+                Sẵn sàng làm người thứ 3
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                Sẵn sàng làm người thứ 3 nếu bạn không chê (nên chê nha)
+              </p>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+          <div
+            class="bg-white/40 backdrop-blur-md border border-white/60 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 flex flex-col group"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="h-64 overflow-hidden relative">
+              <img
+                src="https://wallpapersok.com/images/hd/strong-skeleton-meme-4xv2qskgcevamihs.jpg"
+                alt="Code Screen"
+                class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <span
+                class="text-xs font-bold text-green-600 uppercase tracking-wider mb-2"
+                >Fame</span
+              >
+              <h3 class="text-xl font-bold text-slate-800 mb-3 line-clamp-2">
+                Chụp hình với người nổi tiếng
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-4 flex-grow">
+                Được chụp ảnh chung với võ sư mạnh nhất trái đất. Tại sao lại
+                mạnh nhất ? do anh ấy đã tu luyện tới cảnh giới
+                <i class="text-red-600">Kim cốt bất hoại</i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section (Swiper) -->
+      <section class="py-20 px-4 relative z-10 overflow-hidden">
+        <div class="text-center mb-12" data-aos="fade-down">
+          <h2
+            class="text-3xl md:text-5xl font-bold text-slate-800 mb-4 drop-shadow-sm"
+          >
+            Bình luận của những người đã donate
+          </h2>
+        </div>
+
+        <div class="swiper mySwiper w-full max-w-5xl px-4 pb-12">
+          <div class="swiper-wrapper">
+            <!-- Slide 1: Elon Musk -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white/40 backdrop-blur-md border border-white/60 p-8 rounded-3xl text-center h-full flex flex-col items-center justify-center shadow-lg"
+              >
+                <img
+                  src="https://hips.hearstapps.com/hmg-prod/images/elon-musk-gettyimages-2147789844-web-675b2c17301ea.jpg?crop=0.6666666666666666xw:1xh;center,top&resize=640:*"
+                  class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4"
+                />
+                <p class="italic text-slate-700 mb-4 text-lg">
+                  "Tôi định mua lại dự án này với giá 44 tỷ đô, nhưng Admin từ
+                  chối bán."
+                </p>
+                <h4 class="font-bold text-xl text-slate-900">Elon Musk</h4>
+                <span class="text-sm text-slate-500">CEO X</span>
+              </div>
+            </div>
+
+            <!-- Slide 2: Bill Gates -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white/40 backdrop-blur-md border border-white/60 p-8 rounded-3xl text-center h-full flex flex-col items-center justify-center shadow-lg"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/88/Bill_Gates_at_the_European_Commission_-_2025_-_P067383-987995_%28cropped%29.jpg"
+                  class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4"
+                />
+                <p class="italic text-slate-700 mb-4 text-lg">
+                  "Tiền nhiều để làm gì? Để donate cho dự án Nuôi Tôi chứ làm gì
+                  nữa!"
+                </p>
+                <h4 class="font-bold text-xl text-slate-900">Bill Gates</h4>
+                <span class="text-sm text-slate-500">Founder Microsoft</span>
+              </div>
+            </div>
+
+            <!-- Slide 3: Mark Zuckerberg -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white/40 backdrop-blur-md border border-white/60 p-8 rounded-3xl text-center h-full flex flex-col items-center justify-center shadow-lg"
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg"
+                  class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4"
+                />
+                <p class="italic text-slate-700 mb-4 text-lg">
+                  "Chúng tôi đã tích hợp dự án này vào Facebook và sẽ đầu tư
+                  nhiều hơn nữa trong tương lai"
+                </p>
+                <h4 class="font-bold text-xl text-slate-900">Mark Xoăn</h4>
+                <span class="text-sm text-slate-500">CEO Meta</span>
+              </div>
+            </div>
+
+            <!-- Slide 4: Jeff Bezos -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white/40 backdrop-blur-md border border-white/60 p-8 rounded-3xl text-center h-full flex flex-col items-center justify-center shadow-lg"
+              >
+                <img
+                  src="https://cdn.britannica.com/56/199056-050-CCC44482/Jeff-Bezos-2017.jpg"
+                  class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4"
+                />
+                <p class="italic text-slate-700 mb-4 text-lg">
+                  "Tôi đã khóc khi nhìn thấy và được chụp hình chung với võ sư
+                  <i class="text-red-600">"Kim cốt bất hoại"</i>, tôi không thể
+                  tin được là có người như thế tồn tại"
+                </p>
+                <h4 class="font-bold text-xl text-slate-900">Jeff Bezos</h4>
+                <span class="text-sm text-slate-500">Founder Amazon</span>
+              </div>
+            </div>
+
+            <!-- Slide 5: Phạm nhật vượng -->
+            <div class="swiper-slide">
+              <div
+                class="bg-white/40 backdrop-blur-md border border-white/60 p-8 rounded-3xl text-center h-full flex flex-col items-center justify-center shadow-lg"
+              >
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQJpYaQTuJ9IMioNevesEHZghuxN7HeOch-Q&s"
+                  class="w-24 h-24 rounded-full object-cover border-4 border-white shadow-md mb-4"
+                />
+                <p class="italic text-slate-700 mb-4 text-lg">
+                  "+1 chiếc Vinfast"
+                </p>
+                <h4 class="font-bold text-xl text-slate-900">
+                  Phạm Nhật Vượng
+                </h4>
+                <span class="text-sm text-slate-500">Chủ tịch VinGroup</span>
+              </div>
+            </div>
+          </div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer
+        class="relative z-10 bg-white/30 backdrop-blur-md border-t border-white/40 py-8 text-center px-4"
+      >
+        <p class="text-lg font-bold text-slate-800 mb-2">
+          © 2026 Dự Án "Nuôi Tôi"
+        </p>
+        <p class="text-sm text-slate-600 max-w-2xl mx-auto leading-relaxed">
+          ⚠️ <span class="font-bold">Disclaimer:</span> Dự án này mang tính chất
+          hài hước, giải trí là chính. Chúng tôi không lừa đảo, không đa cấp,
+          không bán bảo hiểm. Hình ảnh người nổi tiếng chỉ là "chế" cho vui, xin
+          đừng kiện. Yêu thương! ❤️
+        </p>
+      </footer>
     </div>
-    <!-- Main -->
 
-    <!-- Footer -->
-
-    <!-- ======================= -->
-    <!-- 3. JS LIBRARIES         -->
-    <!-- ======================= -->
-
-    <!-- Typed.js: Hiệu ứng gõ chữ -->
+    <!-- JS LIBRARIES -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
-    <!-- AOS: Hiệu ứng cuộn trang -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Popper & Tippy: Tooltip  -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
-
-    <!-- Swiper: Slider -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- OverlayScrollbars: Thanh cuộn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.3.0/browser/overlayscrollbars.browser.es6.min.js"></script>
-
-    <!-- MicroModal: Popup -->
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-
-    <!-- Lottie Player: Hình động JSON -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <!-- Tabby.js -->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
 
-    <!-- ======================= -->
-    <!-- 4. INIT SCRIPT (Kích hoạt) -->
-    <!-- ======================= -->
+    <!-- INIT SCRIPT -->
     <script>
       var typed = new Typed(".element", {
-        strings: ["Xin chào!", "Mình là Developer."],
-        typeSpeed: 50,
+        strings: [
+          "Bạn có tiền nhưng không biết làm gì ?",
+          "Hãy nuôi chúng tôi !",
+          "Bằng cách donate cho chúng tôi !",
+          "Chúng tôi sẽ khiến tiền của bạn trở nên có ích !",
+        ],
+        typeSpeed: 40,
         loop: true,
+        backDelay: 1500,
+        showCursor: false,
       });
 
-      // 2. Kích hoạt AOS
       AOS.init();
 
-      // 3. Kích hoạt Tippy
-      tippy("[data-tippy-content]");
+      tippy("[data-tippy-content]", {
+        animation: "scale",
+        delay: [400, 0],
+      });
 
-      // 4. Kích hoạt OverlayScrollbars
       const { OverlayScrollbars } = OverlayScrollbarsGlobal;
       OverlayScrollbars(document.querySelector("body"), {});
 
-      // 5. Kích hoạt MicroModal
       MicroModal.init();
 
-      // 6. Kích hoạt Tabby.js
-      var tabs = new Tabby("[data-tabs]");
+      // Kích hoạt Swiper cho phần Testimonials
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow", // Hiệu ứng 3D xếp lớp
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto", // Tự động tính toán số slide
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false, // Tắt bóng đen cho sáng
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            effect: "slide", // Mobile dùng slide thường cho dễ nhìn
+          },
+          768: {
+            slidesPerView: 2,
+            effect: "coverflow",
+          },
+          1024: {
+            slidesPerView: 3,
+            effect: "coverflow",
+          },
+        },
+      });
     </script>
   </body>
 </html>

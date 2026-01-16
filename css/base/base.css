@@ -1,0 +1,67 @@
+:root {
+  --font-main: "TikTok Sans", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-code: "Google Sans Code", "Fira Code", "Courier New", monospace;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+a,
+li,
+ul,
+ol,
+button,
+input,
+textarea,
+select,
+option,
+label,
+strong,
+b,
+i,
+em,
+small,
+mark,
+del,
+ins,
+blockquote,
+figcaption,
+table,
+th,
+td,
+.button,
+.title,
+.subtitle,
+.content {
+  font-family: var(--font-main) !important;
+}
+
+.element,
+code,
+pre,
+kbd,
+samp,
+var,
+.font-mono {
+  font-family: var(--font-code) !important;
+  letter-spacing: -0.5px;
+}
+
+.element {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.typed-cursor {
+  font-family: var(--font-code) !important;
+  font-weight: normal;
+  color: inherit;
+}

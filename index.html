@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuôi tôi</title>
+
+    <!-- ======================= -->
+    <!-- 1. FONTS (Phông chữ)    -->
+    <!-- ======================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ======================= -->
+    <!-- 2. CSS LIBRARIES        -->
+    <!-- ======================= -->
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- OverlayScrollbars -->
+    <link
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.3.0/styles/overlayscrollbars.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <!-- Reset css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom CSS -->
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="container">
+      <span class="element"></span>
+      <div class="box">I'm in a box.</div>
+
+      <ul data-tabs>
+        <li><a data-tabby-default href="#tab1">Tab 1</a></li>
+        <li><a href="#tab2">Tab 2</a></li>
+      </ul>
+
+      <div id="tab1">Nội dung 1</div>
+      <div id="tab2">Nội dung 2</div>
+    </div>
+    <!-- Main -->
+
+    <!-- Footer -->
+
+    <!-- ======================= -->
+    <!-- 3. JS LIBRARIES         -->
+    <!-- ======================= -->
+
+    <!-- Typed.js: Hiệu ứng gõ chữ -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- AOS: Hiệu ứng cuộn trang -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Popper & Tippy: Tooltip  -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <!-- Swiper: Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- OverlayScrollbars: Thanh cuộn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/2.3.0/browser/overlayscrollbars.browser.es6.min.js"></script>
+
+    <!-- MicroModal: Popup -->
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+    <!-- Lottie Player: Hình động JSON -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Tabby.js -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby/dist/js/tabby.polyfills.min.js"></script>
+
+    <!-- ======================= -->
+    <!-- 4. INIT SCRIPT (Kích hoạt) -->
+    <!-- ======================= -->
+    <script>
+      var typed = new Typed(".element", {
+        strings: ["Xin chào!", "Mình là Developer."],
+        typeSpeed: 50,
+        loop: true,
+      });
+
+      // 2. Kích hoạt AOS
+      AOS.init();
+
+      // 3. Kích hoạt Tippy
+      tippy("[data-tippy-content]");
+
+      // 4. Kích hoạt OverlayScrollbars
+      const { OverlayScrollbars } = OverlayScrollbarsGlobal;
+      OverlayScrollbars(document.querySelector("body"), {});
+
+      // 5. Kích hoạt MicroModal
+      MicroModal.init();
+
+      // 6. Kích hoạt Tabby.js
+      var tabs = new Tabby("[data-tabs]");
+    </script>
+  </body>
+</html>
